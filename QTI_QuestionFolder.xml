@@ -1,0 +1,813 @@
+<?xml version="1.0"?>
+&#x2665;<questestinterop>
+  <item ident="item0">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>What does High Density Road refer to?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>More than 6000 vehicles use the road in any average 24 hours period.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>More than 5000 vehicles use the road in any average 24 hours period.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Between 1000 and 6000 vehicles use the road in any average 24 hours period.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Less than 1000 vehicles use the road in any average 24 hours period.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item1">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following descriptions describe a Single slope vertical face earth mound?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Most commonly used for storage purposes as they can function in all 4 protective roles (interceptor, receptor, container and screening). Minimum traverse width should be 2.4m at the level of the top of the explosive stack. The traverse should project an additional 600mm minimum above the stack. The traverse toe or face should be positioned about 1m from the stack or the explosive storehouse wall.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Makes use of the building structure to support the earth cover. This includes fully buried buildings not moer than 600mm below ground level.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Primarily used as receptor traverses or if properly designed as container traverses. It is basically brick, reinforced concrete (RC), earth sandwiched between concrete or steel. 680mm brick or 450 RC can be considered as a receptor traverse at ES. Where stocks are to be preserved or protection of personnel is needed, walls of builds should be designed to resist collapse.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Natural features, e.g. hillocks, etc.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item2">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following describes a Heavy Walled ESH?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>As an exposed site, it resists high velocity missiles but is not designed to resist blasts.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>The protective roof must have a minimum thickness of 150mm reinforced concrete (RC).</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>None of the above.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item3">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following describes a Category B building?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Building, rooms, etc, where authorised quantities of explosives except HD 1.1, are stored, in which the explosives are not exposed, and do not give rise to flammable vapour or explosive dust.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Explosives buildings in which explosive gases/vapours but not explosive dust may be present.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Explosives buildings in which explosives do not give rise to flammable vapour or explosives dust at normal storage temperature.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Explosives building in which the explosives are exposed or in which the explosives may give rise to explosive dust, but not flammable vapour.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item4">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is preferred to be used in the explosive storehouse? Electrically powered MHEs or MHE powered by internal combustion engines?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Electrically powered MHEs?</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>MHE powered by internal combustion engines.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>None of the above.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item5">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following refers to minimum permissible distances between a potential explosion site and a public traffic route?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Inter-Magazine Distance</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Ammunition Process Distance</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Public Traffic Route Distance</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Inhabited Building Distance</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item6">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>An explosive storehouse A (wall of 150mm RC) is used to store 50 tonnes of HD1.2.1 ammunition. A Process Building B with protective roof is to be constructed beside storehouse A. The personnel cannot be evacuated promptly in the event of accident. What is the minimum QD required between storehouse A and Process Building B?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>No QD.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>160m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>195m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>300m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item7">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>I have an ammunition that gives off explosive dust throughout its shelf-life. Which Category and Zone of building should I place it in?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Category A - Zone 1</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Category B - Zone 20</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Category A - Zone 2</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Category B - Zone 21</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item8">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is a QD formulae?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>D = 1/3Q * K</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>D = K * Q ^1/3</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>D = K^1/3 * Q</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>1/3D = K*Q</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item9">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>What is the expected effect of an explosion to a structure located at distance with a K value of 8?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Complete destruction of unstrengthened structure.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Unstrengthened structures will suffer severe damage approaching demolition.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Unstrengthened structures will suffer serious damage (&amp;gt;30% total replacement cost to repair).</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Unstrengthened structures will suffer damage to the main structural members, which will require repair.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">3</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+</questestinterop>

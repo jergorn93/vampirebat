@@ -1,0 +1,93 @@
+from xml.dom import minidom
+import sys
+import HTMLParser
+import codecs
+import string
+import argparse
+import cgi
+
+class Question:
+    def __init__(self, question_text, choices, answer):
+        self.question_text = self.sanitise(question_text)
+        self.choices = [self.sanitise(i) for i in choices]
+        self.answer = answer-1
+
+    def sanitise(self, data):
+        h = HTMLParser.HTMLParser()
+        data = h.unescape(data)
+        data = data.strip()
+        return data
+
+    def pretty_data(self, position):
+        data = "%d. %s\n" % (position, self.question_text)
+        for j in range(len(self.choices)):
+            correct = "<-" if j == self.answer else ""
+            data += "%s. %s %s\n" % (string.ascii_lowercase[j], self.choices[j], correct) 
+        data += "Answer: %s" % (string.ascii_lowercase[self.answer])
+        return data
+
+    def anki_data(self):
+        front = "<b>%s</b>\n\n" % cgi.escape(self.question_text)
+        correct = ""
+        for i in range(len(self.choices)):
+            current = "%s. %s" % (string.ascii_lowercase[i], self.choices[i]) 
+            if i == self.answer:
+                correct = current 
+            front += "%s\n" % cgi.escape(current)
+        front = front.strip()
+        back = cgi.escape("Answer: %s" % correct)
+        data = "%s;%s" % (front, back)
+        data = data.replace("\n", "<br>")
+        return data
+
+def parse_xmlanswer(xmldata):
+    dom = minidom.parseString(xmldata)
+    items = dom.getElementsByTagName("item")
+    questions = []
+    for i in items:
+        query = i.getElementsByTagName("presentation")[0].getElementsByTagName("mattext")
+        question_text = query[0].firstChild.nodeValue
+        choices = [j.firstChild.nodeValue for j in query[1:]]
+        answer = int(i.getElementsByTagName("varequal")[0].firstChild.nodeValue)
+        question = Question(question_text, choices, answer)
+        questions.append(question)
+    return questions
+
+def text_format(questions):
+    result = ""
+    for i in range(len(questions)):
+        result += "%s\n\n" % questions[i].pretty_data(i)
+    result = result.strip() + "\n"
+    return result
+
+def anki_format(questions):
+    result = ""
+    for i in range(len(questions)):
+        result += "%s\n" % questions[i].anki_data()
+    result = result.strip()
+    return result
+    
+def main():
+    parser = argparse.ArgumentParser(description="Parse and extract questions and choices from LMS question bank exports.")
+    parser.add_argument('files' , nargs="+", help="Files to parse")
+    parser.add_argument('--format', '-f', default="text", help="The output format (default is text).", choices=['anki', 'text'])
+    parser.add_argument('--output', '-o', default="stdout", help="Where to output (default is stdout, any other value is construed as a filename).")
+    args = parser.parse_args()
+
+    output_pipe = None
+    if args.output == "stdout":
+        output_pipe = sys.stdout
+    else:
+        output_pipe = codecs.open(args.output, 'w', "utf-8")
+
+    questions = []
+    for i in args.files:
+        questions += parse_xmlanswer(file(i).read())
+
+    if args.format == "text":
+        output_pipe.write(text_format(questions))
+    elif args.format == "anki":
+        output_pipe.write(anki_format(questions))
+
+if __name__ == "__main__":
+    main()

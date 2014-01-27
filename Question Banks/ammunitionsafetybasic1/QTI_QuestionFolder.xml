@@ -1,0 +1,6134 @@
+<?xml version="1.0"?>
+<questestinterop>
+  <item ident="item0">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which one of the following matches is false?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Ammo I/C - CPL</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Range Sergeant Major - CSM</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Weapon Safety - 3SG</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Arms Clearing I/C - 3SG</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item1">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is an EED?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Bridge Wire</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Charged composition</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Conducting charge</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Bridge composition</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item2">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State which of the following falls under the Ergonomics category of the Machine factor.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Machine is not maintained</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Machine is poorly designed</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Machine is defective</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Machine is used incorrectly</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item3">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Describe why it is important to follow the correct procedure of handling the weapon and ammo.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Human error contributes the most to incidents.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Failure to follow the correct procedures is a punishable offence.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>The weapon may get damaged.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>The ammo may get damaged.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item4">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State which of the following is a possible factor that lead to forklift turn overs.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Turning sharply</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Braking too hard</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Colliding with overhead structure</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item5">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State which of the following is a possible accident involving forklifts.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Slips and falls</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Flipping over</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Pedestrians being struck</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item6">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Describe what should be done to the fork when parking a forklift.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Tilt fork fully forward and lowered to the ground</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Tilt fork fully forward</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Tilt fork fully backwards and lowered to the ground</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Tilt fork to the right and lowered to the ground</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item7">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>How many hazard divisions of explosives are there?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>4</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>5</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>6</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>7</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">3</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item8">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Why is it important to handle ammunition safely?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Mishandling these items will lead to grave consequences.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Ammunition will not function if not handled safely.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Punishment will be meted out for unsafe behaviors.
+</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>It is written in the safety manual.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item9">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Describe what may happen when there is improper stacking at ESH.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>The ammunition packages may drop and injure personnel.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Ammunition and their boxes may be damaged.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Ammunition packages may drop and cause ammunition scattering.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item10">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is true of Titanium Tetrachloride?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Can cause nausea when inhaled</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Can cause migraine when inhaled</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Can cause blindness when in contact with the eye</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item11">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Is "Surrender all contraband when handling ammunition" one of the 10 golden rules of ammunition Safety?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Yes</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>No</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item12">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is an example of a propellant?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Nitrocellulose</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Thunderflash</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Hand Grenade</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Cartidge 40mm Rifle Grenade HEDP, M433</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item13">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>What is a dud?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Blind</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Misfire</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Hangfire</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Blank</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item14">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>What must a person be assigned to destroy blind wear?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Demolition goggle</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Bullet proof vest</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>SAF issued helmet and earplug</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item15">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>In what angle must pen guns and firing of illuminating ammunition be directed?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>1170 mils to 1530 mils</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>1170 mils to 1540 mils</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>1160 mils to 1530 mils</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>1160 mils to 1540 mils</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item16">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which one of the following is not the reason why protective wall made of sandbags must be set up around the blind?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>To reduce splinters</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>To reduce blast</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>To prevent radio frequency</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>To prevent people from accidentally touching the blind
+</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">3</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item17">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>What is the safety distance for disposal of hand grenades?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>300m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>200m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>150m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>100m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item18">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>What is the safety distance for disposal of projectile up to 100mm?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>650m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>600m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>550m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>500m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item19">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is false regarding field storage of ammunition?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Explosive ordnance will not stored or placed together with POL.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>The storage point must be secure and shady.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>They are to be stored in their original packing until immediately prior to issue for firing.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>The storage point need not be sign posted.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item20">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which sides of a tonner transporting ammunition must have caution labels?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Front, rear, left, right</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Front, rear, top, bottom</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Left, right, top, bottom</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Top, front, rear, right</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item21">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Rough handling of explosive ordnance is forbidden and care must be taken to avoid which of the following?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Friction</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Dropping</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Impact</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Friction</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="5">
+                <flow_mat>
+                  <material>
+                    <mattext>Dropping</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="6">
+                <flow_mat>
+                  <material>
+                    <mattext>Impact</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="7">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">7</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback4" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback5" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback6" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item22">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>What is deflagration?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Slow burning in a confined environment</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Rapid burning in a confined environment</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Rapid burning in an open environment</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Slow burning in an open environment</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item23">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>High explosives has the ability to cause sudden propagation of __________</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Shockwave energy</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>High pressure air blast</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Debris</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item24">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>This ammunition contains a tracer. It is a Live Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item25">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>This ammunition contains a chemical substance. It is a Live Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item26">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>This ammunition contains a smoke substance. It is a Live Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item27">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>This ammunition can produce light effect. It is a Live Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item28">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>This ammunition can produce incendiary effect. It is a Live Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item29">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>An ammunition which when initiated, activates or explodes earlier than expected is called a premature explosion.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item30">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Practice Ammunition are Live Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item31">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Drill Ammunition is an inert Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item32">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Dummy Ammunition is an inert Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item33">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Cut-out models are inert Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item34">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>A cartridge case containing propellant, gunpowder without a projectile. Its intention is to produce a loud noise on firing when used in training, signalling or salutes. This is a Blank Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item35">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Fabricating models of ammunition for chambering and loading purposes is not allowed.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item36">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Sitting or standing on explosive ordnance and their containers is forbidden.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item37">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Mixing initiating explosive ordnance with the main explosive ordnance is not allowed.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item38">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Loading live and blank ammunition into the same magazine of weapons is not allowed.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item39">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Mixing explosive ordnance belonging to different lots is not allowed.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item40">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Mixing uncased and cased explosive ordnance is not allowed.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item41">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>What is the distance that the troops deployed behind the mine must take cover in a foxhole or
+behind cover?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>16m to 100m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>16cm to 100cm</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>15m to 100m</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>15cm to 100cm</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item42">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is/are contraband items?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>POL</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Handphones</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Cigarettes</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item43">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is not allowed?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Stop on the way to buy food while transporting ammunition</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Stop on the way to fetch personnel while transporting ammunition</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Detour while transporting ammunition as there is still ample time to spare</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item44">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>What is the factor that contributes the most to incidents?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Human error</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Weapon error</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Environment</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Faulty ammunition</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item45">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State all the M factors in risk management process.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Man, Medium, Machine, Mission, Management</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Man, Money, Machine, Mission, Management</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Man, Medium, Mission, Management</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Medium, Machine, Mission, Management</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item46">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>List the first step of risk management process.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Identify hazard</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Evaulate control measure</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Implement control measure</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Assess hazard</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item47">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which stage of a mission is the RAC used?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Preparation</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Execution</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Recovery</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item48">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State all the risk level used in RAC.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Extremely High, High, Moderate, Low</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>High, Low</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Moderate,Low</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Extremely High, Extremely Low</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item49">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which one of the M factors do "Dangerous Animals" fall under?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Medium</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Man</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Machine</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Management</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item50">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which one of the M factors does "Strong River Current" fall under?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Medium</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Man</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Machine</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Management</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item51">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State which M factor that "Absence of Lesson Plan for training" falls under.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Management</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Medium</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Man</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Machine</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item52">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State which of the following falls under the Proficiency category of the Man factor.
+</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Man is not trained</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Man does not have enough rest</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Man is too zealous</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Man is not hydrated enough</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item53">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State the first thing you need to do before carrying any load.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Size up the load</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Bend down to carry the load</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Keep both legs near to each other</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Keep the load away from your body while lifting</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item54">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is not a possible injury due to incorrect lifting?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Cuts</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Sprains</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Burns</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Damage to eyesight</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item55">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>What can you do if the load is too heavy to lift?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Get help from other people</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Break the load up into smaller load if possible</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Use equipment to lift the load</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item56">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State the reason why leg muscles are very important for lifting.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>They are the strongest part of our body</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>They are the nearest to the load</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>They are the longest muscle in our body</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>They are the support of our upper body</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item57">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>When there is a fire, we should:</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Assess the situation</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Run for safety</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Move away the explosives</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item58">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Describe how can safety be enforced in explosives storehouses.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>By training storehouse personnel</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Supervising staff must ensure safety</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Everyone takes responsibility for safety</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item59">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State which of the following is not a safety precaution for forklift.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Conduct pre-operating check</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Do not let anyone stand on the tines</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Wear protective equipment</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Add additional counterweight on the forklift</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item60">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State which of the folowing is a pre-operational check when using forklifts.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Ensure that tires are inflated properly.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Check maximum load capacity to ensure that forklift is able to handle load sufficiently.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Check warning devices are functioning properly.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item61">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Hand trolleys are allowed for transportation of ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item62">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>In the event of gassing, ____.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>The affected ammunition is to immersed in water.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Use a pin to pierce a hole in the bag to release the gas outside the storehouse.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>No actions need to be taken as it is a common phenomenon.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Call Fire Brigade.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item63">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>In the case of eye contact with WP, ____.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>The eye is to be flushed with saline solution</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>The eye is to be flushed with water</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Affected personnel must not open his/her eyes</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>The eye is to be immersed in water</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item64">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is a precaution when handling Titanium Tetrachloride?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Wear protective respiratory clothing</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Wear goggles and rubber gloves</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Ensure that there is adequate ventilation</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item65">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following Safety Requirement at the ESH is true?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Flammable compounds are not be used.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Food and drinks are not allowed in the ESH or APB.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Radio frequency emitting equipment are not allowed.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item66">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is false for Ammunition Process Work?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Always stack belted ammunition with percussion cap facing each other.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Do not flick belted ammunition.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Do not use foreign objects to  push rounds into links.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Plastics sheet is placed in  between each round link when  stacking.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item67">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is true?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Running with trolley of ammunition packages is not allowed as it may cause damage to both personnel and ammunition boxes.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Running with trolley of ammunition packages is not allowed as it may cause damage to personnel only.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Running with trolley of ammunition packages is not allowed as it may cause damage to the trolley.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Running with trolley of ammunition packages is not allowed as it may cause damage to ammunition boxes only.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item68">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>_____ gas is generated as a result of a chemcial reaction between the filling and its inherent mositure content.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Oxygen</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Titanium Tetrachloride
+</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Hydrogen</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Carbon dioxide</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">3</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item69">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following is true?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Do not use force to close the lids or covers of ammunition containers.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>When lifting loads, never exert your back muscles to carry the load.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Any ammunition or container damaged during handling must be set aside for inspection.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>All of the above.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item70">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following items are allowed in ESH?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Cigarettes</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Remote Controlled Car Key</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Macdonalds' Double Mcspicy burger</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>None of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item71">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which of the following items are allowed in ESH?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Coke</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Plain water</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Camera</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Radio
+</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item72">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>A pyrotechnic _____ .</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Generates gases at the controlled rates required for propulsion</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Produce effects such as light, smoke, sound or flame</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Causes sudden propagation of destructive shockwave</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>None of the above</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item73">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Is "Protect ammunition from rain and direct sunlight" one of the 10 Golden Rules of Ammunition Safety?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Yes</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>No</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item74">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Is "Do not handle food and drinks with ammunition" one of the 10 Golden Rules of Ammunition Safety?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Yes</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>No</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext>
+</mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item75">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>This ammunition can produce sound effect. It is a Live Ammunition.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item76">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Low explosive can detonate</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item77">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Why is it dangerous to tamper ammunition?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Any deviation from the standard instructed way may cause danger to user.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Copyright issue</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>It will reduce its service life</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>It will be difficult to re-classify the ammunition</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item78">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Risk is the likelihood that a hazard will cause injury or damage to property.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item79">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Hazard is anything that has the potential to cause injury or damage to property.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item80">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Which one of the M factors does "Ammunition" fall under?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Machine</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Man</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Medium</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Management</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item81">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>State the number of passengers allowed on a forklift.</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>0</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>1</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>2</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>3</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item82">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>Why is it mandatory for a 44 gallon of water to be placed for storehouses storing white phosphorus ammunition?</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>The water is used to fight fire.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>The water is used to submerge the WP rounds in case of leakage.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>The water is used to maintain the humidity in the store house.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>The water is used to regulate the temperature of the store house.</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">2</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item83">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>A high explosive __________ .</mattext>
+        </material>
+        <response_lid ident="MC1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <flow_mat>
+                  <material>
+                    <mattext>Explodes</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <flow_mat>
+                  <material>
+                    <mattext>Deflagrates</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="3">
+                <flow_mat>
+                  <material>
+                    <mattext>Burns</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="4">
+                <flow_mat>
+                  <material>
+                    <mattext>Detonates</mattext>
+                  </material>
+                </flow_mat>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="MC1">4</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback2" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback3" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+  <item ident="item84">
+    <presentation>
+      <flow>
+        <material>
+          <mattext>The object which is launched through a barrel or launching device by the force of propellant gases is called the projectile.</mattext>
+        </material>
+        <response_lid ident="TF1" rcardinality="single" rtiming="no">
+          <render_choice>
+            <flow_label>
+              <response_label ident="1">
+                <material>
+                  <mattext>True</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+            <flow_label>
+              <response_label ident="2">
+                <material>
+                  <mattext>False</mattext>
+                </material>
+              </response_label>
+            </flow_label>
+          </render_choice>
+        </response_lid>
+      </flow>
+    </presentation>
+    <resprocessing>
+      <respcondition title="correct">
+        <conditionvar>
+          <varequal respident="TF1">1</varequal>
+        </conditionvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="correct" view="candidate">
+      <material>
+        <mattext />
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback0" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+    <itemfeedback ident="itemfeedback1" view="candidate">
+      <material>
+        <mattext> </mattext>
+      </material>
+    </itemfeedback>
+  </item>
+</questestinterop>
