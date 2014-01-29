@@ -5,6 +5,7 @@ import codecs
 import string
 import argparse
 import cgi
+import re
 
 class Question:
     def __init__(self, question_text, choices, answer):
@@ -13,13 +14,18 @@ class Question:
         self.answer = answer-1
 
     def sanitise(self, data):
+        data = data.replace("\n", "")
+        data = re.sub("<br.+?>", "\n", data)
+        data = re.sub("<.+?>", "", data)
+        print "******%s*********" % data
         h = HTMLParser.HTMLParser()
         data = h.unescape(data)
         data = data.strip()
+        data = data.replace("\t", "")
         return data
 
     def pretty_data(self, position):
-        data = "%d. %s\n" % (position, self.question_text)
+        data = "%d. %s\n" % (position+1, self.question_text)
         for j in range(len(self.choices)):
             correct = "<-" if j == self.answer else ""
             data += "%s. %s %s\n" % (string.ascii_lowercase[j], self.choices[j], correct) 
@@ -37,7 +43,7 @@ class Question:
         front = front.strip()
         back = cgi.escape("Answer: %s" % correct)
         data = "%s;%s" % (front, back)
-        data = data.replace("\n", "<br>")
+        data = data.replace("\n", "<br>").strip()
         return data
 
 def parse_xmlanswer(xmldata):
