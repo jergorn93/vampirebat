@@ -17,7 +17,6 @@ class Question:
         data = data.replace("\n", "")
         data = re.sub("<br.+?>", "\n", data)
         data = re.sub("<.+?>", "", data)
-        print "******%s*********" % data
         h = HTMLParser.HTMLParser()
         data = h.unescape(data)
         data = data.strip()
