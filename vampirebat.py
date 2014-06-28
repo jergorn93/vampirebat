@@ -41,7 +41,7 @@ class Question:
             front += "%s\n" % cgi.escape(current)
         front = front.strip()
         back = cgi.escape("Answer: %s" % correct)
-        data = "%s;%s" % (front, back)
+        data = "%s@%s" % (front, back)
         data = data.replace("\n", "<br>").strip()
         return data
 
