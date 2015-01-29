@@ -15,8 +15,9 @@ class Question:
 
     def sanitise(self, data):
         data = data.replace("\n", "")
-        data = re.sub("<br.+?>", "\n", data)
+        data = re.sub("<br>", "\n", data)
         data = re.sub("<.+?>", "", data)
+        data = re.sub("''''", "'", data)
         h = HTMLParser.HTMLParser()
         data = h.unescape(data)
         data = data.strip()
@@ -45,6 +46,14 @@ class Question:
         data = data.replace("\n", "<br>").strip()
         return data
 
+    def gift_data(self):
+        data = "%s{" % self.question_text
+        for i in range(len(self.choices)):
+            sigil = "=" if i == self.answer else "~"
+            data += "%s%s " % (sigil, self.choices[i])
+        data += "}"
+        return data
+
 def parse_xmlanswer(xmldata):
     dom = minidom.parseString(xmldata)
     items = dom.getElementsByTagName("item")
@@ -71,11 +80,18 @@ def anki_format(questions):
         result += "%s\n" % questions[i].anki_data()
     result = result.strip()
     return result
+
+def gift_format(questions):
+    result = ""
+    for i in range(len(questions)):
+        result += "%s\n\n" % questions[i].gift_data()
+    result = result.strip()
+    return result
     
 def main():
     parser = argparse.ArgumentParser(description="Parse and extract questions and choices from LMS question bank exports.")
     parser.add_argument('files' , nargs="+", help="Files to parse")
-    parser.add_argument('--format', '-f', default="text", help="The output format (default is text).", choices=['anki', 'text'])
+    parser.add_argument('--format', '-f', default="text", help="The output format (default is text).", choices=['anki', 'text', 'gift'])
     parser.add_argument('--output', '-o', default="stdout", help="Where to output (default is stdout, any other value is construed as a filename).")
     args = parser.parse_args()
 
@@ -93,6 +109,8 @@ def main():
         output_pipe.write(text_format(questions))
     elif args.format == "anki":
         output_pipe.write(anki_format(questions))
+    elif args.format == "gift":
+        output_pipe.write(gift_format(questions))
 
 if __name__ == "__main__":
     main()
