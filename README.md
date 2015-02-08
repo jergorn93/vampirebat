@@ -1,4 +1,4 @@
 vampirebat
 ==========
 
-anki studying generator
+quiz format parser and translator
