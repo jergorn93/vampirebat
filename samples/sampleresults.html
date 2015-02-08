@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+.qblock {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.submission {
+    padding-top: 1em;
+}
+.ablock-wrong {
+    padding-bottom: 1em;
+    border-style: solid;
+    display: table-cell;
+    border-color: red;
+}
+.ablock-correct {
+    padding-bottom: 1em;
+    border-style: solid;
+    display: table-cell;
+    border-color: green;
+}
+.results {
+    border-style: solid;
+    display: table-cell;
+}
+</style>
+<script>
+function grade() {
+    alert("Meow");
+}
+function reset() {
+    alert("Bark");
+}
+</script>
+</head>
+<body>
+<h2>CSSPKE Quiz</h2>
+<div class="qblock" id="q1">
+    <div class="qheader">
+    1) This is a question?
+    </div>
+    <div class="qchoices">
+        <input type="radio" name="q1choices" id="q1choice1">a. Choice 1<br />
+        <input type="radio" name="q1choices" id="q1choice2">b. Choice 2<br />
+        <input type="radio" name="q1choices" id="q1choice3">c. Choice 3<br />
+        <input type="radio" name="q1choices" id="q1choice4">d. Choice 4<br />                        
+    </div>
+</div>
+<div class="ablock-wrong" id="a1">
+Chosen answer:  b <br />
+Correct answer: c
+</div>
+<div class="qblock" id="q2">
+    <div class="qheader">
+    2) This is a question?
+    </div>
+    <div class="qchoices">
+        <input type="radio" name="q2choices" id="q2choice1">a. Choice 1<br />
+        <input type="radio" name="q2choices" id="q2choice2">b. Choice 2<br />
+        <input type="radio" name="q2choices" id="q2choice3">c. Choice 3<br />
+        <input type="radio" name="q2choices" id="q2choice4">d. Choice 4<br />                        
+    </div>
+</div>
+<div class="ablock-correct" id="a2">
+Chosen answer:  b <br />
+Correct answer: c
+</div>
+<div class="submission">
+    <input type="button" onclick="grade()" value="Grade Quiz" />
+    <input type="button" onclick="reset()" value="Reset" />
+</div>
+<p></p>
+<div class="results">
+    Score: 1/2
+</div>
+</body>
+</html>

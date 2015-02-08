@@ -6,6 +6,7 @@ import string
 import argparse
 import cgi
 import re
+import json
 
 class Question:
     def __init__(self, question_text, choices, answer):
@@ -54,6 +55,11 @@ class Question:
         data += "}"
         return data
 
+    def json_data(self):
+        question_dict = {'text': self.question_text, 'answer': self.answer, 'choices': self.choices}
+        return question_dict
+
+
 def parse_xmlanswer(xmldata):
     dom = minidom.parseString(xmldata)
     items = dom.getElementsByTagName("item")
@@ -87,12 +93,18 @@ def gift_format(questions):
         result += "%s\n\n" % questions[i].gift_data()
     result = result.strip()
     return result
-    
+
+def json_format(questions):
+    question_list = [i.json_data() for i in questions]
+    result = json.dumps(question_list)
+    return result
+
 def main():
     parser = argparse.ArgumentParser(description="Parse and extract questions and choices from LMS question bank exports.")
     parser.add_argument('files' , nargs="+", help="Files to parse")
-    parser.add_argument('--format', '-f', default="text", help="The output format (default is text).", choices=['anki', 'text', 'gift'])
+    parser.add_argument('--format', '-f', default="text", help="The output format (default is text).", choices=['anki', 'text', 'gift', 'json'])
     parser.add_argument('--output', '-o', default="stdout", help="Where to output (default is stdout, any other value is construed as a filename).")
+    parser.add_argument('--limit', '-l', help="Limit the results to the first n questions.", type=int)
     args = parser.parse_args()
 
     output_pipe = None
@@ -105,12 +117,20 @@ def main():
     for i in args.files:
         questions += parse_xmlanswer(file(i).read())
 
+    if args.limit:
+        tmp_questions = []
+        for i in range(args.limit):
+            tmp_questions.append(questions[i])
+        questions = tmp_questions
+
     if args.format == "text":
         output_pipe.write(text_format(questions))
     elif args.format == "anki":
         output_pipe.write(anki_format(questions))
     elif args.format == "gift":
         output_pipe.write(gift_format(questions))
+    elif args.format == "json":
+        output_pipe.write(json_format(questions))        
 
 if __name__ == "__main__":
     main()

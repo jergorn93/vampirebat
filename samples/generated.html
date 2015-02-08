@@ -1,0 +1,185 @@
+<html>
+<head>
+<style>
+.qblock {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.submission {
+    padding-top: 1em;
+}
+.ablock {
+    display: none;
+}
+.ablock-wrong {
+    padding-bottom: 1em;
+    border-style: solid;
+    display: table-cell;
+    border-color: red;
+}
+.ablock-wrong-hidden {
+    display: none;
+}
+.ablock-correct {
+    padding-bottom: 1em;
+    border-style: solid;
+    display: table-cell;
+    border-color: green;
+}
+.ablock-correct-hidden {
+    display: none;
+}
+.ablock-incomplete {
+    padding-bottom: 1em;
+    border-style: solid;
+    display: table-cell;
+    border-color: orange;
+}
+.results-placeholder {
+    display: none;
+}
+.results {
+    border-style: solid;
+    display: table-cell;
+}
+</style>
+<script>
+// Quiz Parameters
+
+title = "CSSPKE Junior Tutorial Generation Test"
+questions = [{"answer": 3, "text": "Which of the following SCGs best describes, \"Pyrotechnic substances containing both an explosive substance with an illuminating, incendiary, lachrymatory or smoke-producing substance\"?", "choices": ["SCG C", "SCG E", "SCG F", "SCG G"]}, {"answer": 1, "text": "Ammunition in Storage Compatibility Group __________ contains chemicals specifically designed for incapacitating effects more severe than lachrymation.", "choices": ["J", "K", "L", "S"]}, {"answer": 2, "text": "Why is it necessary to subdivide ammunition of HD 1.2 into HD 1.21 and 1.22?", "choices": ["To distinguish between items which will produce more smoke than those which will not", "To separate items which are likely to produce more fragments than others", "To distinguish items which are likely to produce large fragments with a long range, and items which produce smaller fragments with shorter range", "To distinguish items which have a mass fire hazard and those which have a moderate fire hazard"]}, {"answer": 2, "text": "Under the classification of dangerous goods, class 1 is divided into how many groups according to the hazards presented in the event of initiation?", "choices": ["4", "5", "6", "7"]}, {"answer": 0, "text": "\"Ammunition of mass detonation resulting in severe structural damage. The major hazards are blast, high and low velocity fragments. There may be a risk from heavy debris propelled from the structure in which the explosion occurs, or from the crater.\" What Hazard Division would this ammunition be classified under?", "choices": ["HD 1.1", "HD 1.3", "HD 1.5", "HD 1.6"]}]
+
+// Quiz Grading Logic
+
+function grade_question(question, index) {
+    abcd = ["a", "b", "c", "d"];    
+    inds = index.toString();
+    result = false;
+    valid = true;
+
+    // Get user selection
+    radios = document.getElementsByName("q" + inds + "choices");
+    selection = -1;
+    for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            selection = i;
+        }
+    };
+
+    ablock = document.getElementById("a" + inds);    
+    if (selection == -1) {
+        valid = false;
+        ablock.innerHTML = "Incomplete question";
+        ablock.className = "ablock-incomplete";
+    }
+    else {
+        ablock.innerHTML = "Chosen answer:  " + abcd[selection] + " <br />Correct answer: " + abcd[question.answer];
+        if (selection == question.answer) {
+            result = true;
+            ablock.className = "ablock-correct-hidden";
+        }
+        else {
+            ablock.className = "ablock-wrong-hidden";
+        }
+    }
+    return {'result': result, 'valid': valid};
+}
+
+function grade() {
+    total = questions.length;
+    score = 0;
+    valid = true;
+    for (var i = 0; i < questions.length; i++) {;
+        result = grade_question(questions[i], i+1);
+        if (result.valid) {
+            if (result.result) {
+                score += 1;
+            }
+        }
+        else {
+            valid = false;
+        }
+    };
+    if (valid) {
+        result_data = "Score: " + score.toString() + "/" + total.toString();
+        for (var i = 0; i < total; i++) {
+            inds = i + 1
+            ab = document.getElementById("a" + inds.toString());
+            if (ab.className == "ablock-correct-hidden") {
+                ab.className = "ablock-correct";
+            }
+            else if (ab.className == "ablock-wrong-hidden") {
+                ab.className = "ablock-wrong";
+            }
+        };
+    }
+    else {
+        result_data = "There are uncompleted questions. Please complete them before grading.";
+    }
+    results_element = document.getElementById("results");
+    results_element.innerHTML = result_data;
+    results_element.className = "results";
+}
+
+function reset() {
+    location.reload();
+}
+
+// Quiz Generation Logic
+function generate_question(question, index) {
+    abcd = ["a", "b", "c", "d"];
+    inds = index.toString();
+    choices = question.choices;
+    dynamic_data = "\n<div class=\"qblock\" id=\"q" + inds + "\">\n";
+    dynamic_data += "<div class=\"qheader\">\n";
+    dynamic_data += inds + ") " + question.text + "\n";
+    dynamic_data += "</div>\n";
+    dynamic_data += "<div class=\"qchoices\">\n";
+    for (var i = 0; i < choices.length; i++) {
+        chs = abcd[i];
+        dynamic_data += "<input type=\"radio\" name=\"q" + inds + "choices\" id=\"q" + inds + "choice" + chs + "\">" + chs + ". " + choices[i] + "<br />";
+    };
+    dynamic_data += "</div>\n";
+    dynamic_data += "</div>\n";
+    dynamic_data += "<div class=\"ablock\" id=\"a" + inds + "\">\n";
+    dynamic_data += "</div>\n";
+    return dynamic_data;
+}
+
+function do_load() {
+    placeholder = document.getElementById("placeholder");
+    dynamic_data = "\n<h2>" + title + "</h2>\n";
+    for (var i = 0; i < questions.length; i++) {
+        dynamic_data += generate_question(questions[i], i+1);
+    };
+    placeholder.innerHTML = dynamic_data;
+}
+
+if (window.addEventListener) {
+    window.addEventListener("load", do_load, false);
+}
+else {
+    if (window.attachEvent) {
+        window.attachEvent("onload", do_load);
+    }
+    else {
+        if (window.onLoad) {
+            window.onload = do_load;
+        }
+    }
+}
+</script>
+</head>
+<body>
+<div id="placeholder">
+</div>
+<div class="submission">
+    <input type="button" onclick="grade()" value="Grade Quiz" />
+    <input type="button" onclick="reset()" value="Reset" />
+</div>
+<p></p>
+<div class="results-placeholder" id="results">
+</div>
+</body>
+</html>
