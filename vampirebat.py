@@ -7,20 +7,26 @@ import argparse
 import cgi
 import re
 import json
+import urllib
 
 class Question:
-    def __init__(self, question_text, choices, answer):
-        self.question_text = self.sanitise(question_text)
+    def __init__(self, question_text, choices, answer, show_images=False):        
+        self.show_images = show_images
+        self.question_text = self.sanitise(question_text)        
         self.choices = [self.sanitise(i) for i in choices]
         self.answer = answer-1
 
     def sanitise(self, data):
         data = data.replace("\n", "")
         data = re.sub("<br>", "\n", data)
+        data = re.sub("https://lms.openacademy.mindef.gov.sg", "", data)
+        if self.show_images:
+            data = re.sub(r'<img src="(.+?)".+>', r"***https://lms.openacademy.mindef.gov.sg\1***", data)
         data = re.sub("<.+?>", "", data)
         data = re.sub("''''", "'", data)
         h = HTMLParser.HTMLParser()
         data = h.unescape(data)
+        data = urllib.unquote_plus(data)
         data = data.strip()
         data = data.replace("\t", "")
         return data
@@ -59,8 +65,66 @@ class Question:
         question_dict = {'text': self.question_text, 'answer': self.answer, 'choices': self.choices}
         return question_dict
 
+    def moodle_data(self, doc, index):
+        # <question type="multichoice">...</question>
+        qn_root = doc.createElement("question")
+        qn_root.setAttribute("type", "multichoice")
 
-def parse_xmlanswer(xmldata):
+        # <question><name><text>...</text></name>...</question>
+        name_node = doc.createElement("name")
+        text_node = doc.createElement("text")
+        name_text = doc.createTextNode("Question %d" % index)
+        text_node.appendChild(name_text)
+        name_node.appendChild(text_node)
+        qn_root.appendChild(name_node)
+
+        # <question>...<questiontext format="plain_text"><text>...</text></questiontext></question>
+        qntext_node = doc.createElement("questiontext")
+        qntext_node.setAttribute("format", "html")
+        qntext_text_node = doc.createElement("text")
+        qntext_text = doc.createTextNode("<![CDATA[\n%s\n]]>" % self.question_text)
+        qntext_text_node.appendChild(qntext_text)
+        qntext_node.appendChild(qntext_text_node)
+        qn_root.appendChild(qntext_node)
+
+        # <question>...<answer fraction="x"><text>...</text><feedback><text>...</text></feedback></answer>...</question>
+        for i in range(len(self.choices)):
+            answer_node = doc.createElement("answer")
+            answer_node.setAttribute("fraction", "100" if self.answer == i else "0")
+            answer_node.setAttribute("format", "html")
+
+            answer_text_node = doc.createElement("text")
+            answer_text_text = doc.createTextNode("<![CDATA[\n%s\n]]>" % self.choices[i])
+            answer_text_node.appendChild(answer_text_text)
+            answer_node.appendChild(answer_text_node)
+
+            answer_feedback_node = doc.createElement("feedback")
+            answer_feedback_text_node = doc.createElement("text")
+            answer_feedback_text_text = doc.createTextNode("Correct" if self.answer == i else "Wrong")
+            answer_feedback_text_node.appendChild(answer_feedback_text_text)
+            answer_feedback_node.appendChild(answer_feedback_text_node)
+            answer_node.appendChild(answer_feedback_node)
+
+            qn_root.appendChild(answer_node)
+
+        shuffleanswers_node = doc.createElement("shuffleanswers")
+        shuffleanswers = doc.createTextNode("1")
+        shuffleanswers_node.appendChild(shuffleanswers)
+        qn_root.appendChild(shuffleanswers_node)
+
+        single_node = doc.createElement("single")
+        single = doc.createTextNode("true")
+        single_node.appendChild(single)
+        qn_root.appendChild(single_node)
+
+        answernumbering_node = doc.createElement("answernumbering")
+        answernumbering = doc.createTextNode("abc")
+        answernumbering_node.appendChild(answernumbering)
+        qn_root.appendChild(answernumbering_node)
+
+        return qn_root
+
+def parse_xmlanswer(xmldata, showimages):
     dom = minidom.parseString(xmldata)
     items = dom.getElementsByTagName("item")
     questions = []
@@ -69,7 +133,7 @@ def parse_xmlanswer(xmldata):
         question_text = query[0].firstChild.nodeValue
         choices = [j.firstChild.nodeValue for j in query[1:]]
         answer = int(i.getElementsByTagName("varequal")[0].firstChild.nodeValue)
-        question = Question(question_text, choices, answer)
+        question = Question(question_text, choices, answer, showimages)
         questions.append(question)
     return questions
 
@@ -99,12 +163,23 @@ def json_format(questions):
     result = json.dumps(question_list)
     return result
 
+def moodle_format(questions):
+    doc = minidom.Document()
+    quiz_root = doc.createElement("quiz")
+    doc.appendChild(quiz_root)
+    for i in range(len(questions)):
+        quiz_root.appendChild(questions[i].moodle_data(doc, i))
+    return doc.toprettyxml()
+
+
+
 def main():
     parser = argparse.ArgumentParser(description="Parse and extract questions and choices from LMS question bank exports.")
     parser.add_argument('files' , nargs="+", help="Files to parse")
-    parser.add_argument('--format', '-f', default="text", help="The output format (default is text).", choices=['anki', 'text', 'gift', 'json'])
+    parser.add_argument('--format', '-f', default="text", help="The output format (default is text).", choices=['anki', 'text', 'gift', 'json', 'moodle'])
     parser.add_argument('--output', '-o', default="stdout", help="Where to output (default is stdout, any other value is construed as a filename).")
     parser.add_argument('--limit', '-l', help="Limit the results to the first n questions.", type=int)
+    parser.add_argument('--showimages', '-s', help="Show image links", action='store_true')    
     args = parser.parse_args()
 
     output_pipe = None
@@ -115,7 +190,7 @@ def main():
 
     questions = []
     for i in args.files:
-        questions += parse_xmlanswer(file(i).read())
+        questions += parse_xmlanswer(file(i).read(), args.showimages)
 
     if args.limit:
         tmp_questions = []
@@ -130,7 +205,9 @@ def main():
     elif args.format == "gift":
         output_pipe.write(gift_format(questions))
     elif args.format == "json":
-        output_pipe.write(json_format(questions))        
+        output_pipe.write(json_format(questions))
+    elif args.format == "moodle":
+        output_pipe.write(moodle_format(questions))
 
 if __name__ == "__main__":
     main()
