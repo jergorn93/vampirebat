@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+	function SaveToDisk(fileURL, fileName) {
+    // for non-IE
+    if (!window.ActiveXObject) {
+        var save = document.createElement('a');
+        save.href = fileURL;
+        save.target = '_blank';
+        save.download = fileName || 'unknown';
+
+        var event = document.createEvent('Event');
+        event.initEvent('click', true, true);
+        save.dispatchEvent(event);
+        (window.URL || window.webkitURL).revokeObjectURL(save.href);
+    }
+
+    // for IE
+    else if ( !! window.ActiveXObject && document.execCommand)     {
+        var _window = window.open(fileURL, '_blank');
+        _window.document.close();
+        _window.document.execCommand('SaveAs', true, fileName || fileURL)
+        _window.close();
+    }
+}
+
+var list_of_links = [%s];
+for (i = 0; i < list_of_links.length; i++) {
+    SaveToDisk(list_of_links[i], "temp");    
+}
+
+</script>
+</head>
+<body>
+<div id="placeholder">If you get a whole bunch of non-image files, please log in to LMS. After downloading, please check your downloads directory.</div>
+</body>
+</html>

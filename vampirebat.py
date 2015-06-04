@@ -82,7 +82,7 @@ class Question:
         qntext_node = doc.createElement("questiontext")
         qntext_node.setAttribute("format", "html")
         qntext_text_node = doc.createElement("text")
-        qntext_text = doc.createTextNode("<![CDATA[\n%s\n]]>" % self.question_text)
+        qntext_text = doc.createCDATASection(self.question_text)
         qntext_text_node.appendChild(qntext_text)
         qntext_node.appendChild(qntext_text_node)
         qn_root.appendChild(qntext_node)
@@ -94,7 +94,7 @@ class Question:
             answer_node.setAttribute("format", "html")
 
             answer_text_node = doc.createElement("text")
-            answer_text_text = doc.createTextNode("<![CDATA[\n%s\n]]>" % self.choices[i])
+            answer_text_text = doc.createCDATASection(self.choices[i])
             answer_text_node.appendChild(answer_text_text)
             answer_node.appendChild(answer_text_node)
 
@@ -179,7 +179,7 @@ def main():
     parser.add_argument('--format', '-f', default="text", help="The output format (default is text).", choices=['anki', 'text', 'gift', 'json', 'moodle'])
     parser.add_argument('--output', '-o', default="stdout", help="Where to output (default is stdout, any other value is construed as a filename).")
     parser.add_argument('--limit', '-l', help="Limit the results to the first n questions.", type=int)
-    parser.add_argument('--showimages', '-s', help="Show image links", action='store_true')    
+    parser.add_argument('--showimages', '-s', help="Show image links", action='store_true')
     args = parser.parse_args()
 
     output_pipe = None
